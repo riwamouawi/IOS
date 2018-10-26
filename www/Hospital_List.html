@@ -47,8 +47,14 @@
             
             function callHospitalsList()
              {
-                window.location = "Hospital_List.html";
+                //window.location = "Hospital_List.html";
              }
+            
+             function callAppsLinksPage()
+             {
+                window.location = "Apps & Links.html";
+             }
+            
             
             function onSuccess(result){
               console.log("Success:"+result);
@@ -93,6 +99,9 @@
                         </button>
                         <button name="buttonClick" onclick="callHospitalsList()" text-align="center" id="menu">
                             <font color="white">Hospitals</font>
+                        </button>
+                        <button name="buttonClick" onclick="callAppsLinksPage()" text-align="center" id="menu">
+                            <font color="white">Apps & Links</font>
                         </button>
                      </center>
                 </div>    

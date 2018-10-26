@@ -47,7 +47,7 @@
 
              function callAssistance()
              {
-                //window.location = "index.html";
+                window.location = "index.html";
                  //window.plugins.CallNumber.callNumber(onSuccess, onError, "18271632", true);
              }
             
@@ -56,10 +56,10 @@
                 window.location = "Hospital_List.html";
              }
             
-             function callAppsLinksPage()
-             {
-                window.location = "Apps & Links.html";
-             }
+            function callAppsLinksPage()
+            {
+               // window.location = "Apps.html";
+            }
             
             function onSuccess(result){
                 console.log("Success:"+result);
@@ -100,33 +100,27 @@
                         <button name="buttonClick" onclick="callHospitalsList()" text-align="center" id="menu">
                             <font color="white">Hospitals</font>
                         </button>
-                        <button name="buttonClick" onclick="callAppsLinksPage()" text-align="center" id="menu">
+                         
+                         <button name="buttonClick" onclick="callAppsLinksPage()" text-align="center" id="menu">
                             <font color="white">Apps & Links</font>
                         </button>
                      </center>
                 </div>    
             </div> <!-- header -->
             <div data-role="main" class="ui-content">
-                <div> <h4>For inquiries or information regarding our upcoming service, please call, text or email us </h4></div>
-                <div> <h5>Curavim provides concierge medicine services, leveraging a select group of health providers, hospitals and concierge colleagues on the ground in Shanghai and a network of US specialists, in conformance with the high quality standards of esteemed hospitals in Boston, MA</h5></div>
+                <div> <h4>Check our favorite applications on Google Play Store! </h4></div>
+                <div> <a href ="market://details?id=gov.cdc.oid.ncezid.travwell">Center for Disease Control (CDC)</a></div>
+                <div><h5> Electronic Health Record:</h5></div>
                 
-                <div id="m1">
-                    <div style="padding:5px">
-                         Boston <br>
-                    </div>
-                     <a class="button" href="tel://+1-617-299-1193" style="padding:5px"> <font size="3" color="black"> +1-617-299-1193</font></a>
-                    <button name="buttonClick" onclick="callAssistance()" text-align="center" id="menu">
-                        SEND SMS</button>
-                  </div>
+                <div> <a href ="https://play.google.com/store/apps/details?id=com.cerner.iris.play">Cerner Corporation</a></div>
+                <div> <a href ="https://play.google.com/store/apps/details?id=epic.mychart.android">Epic Systems Corporation</a></div>
+                <div> <a href ="https://play.google.com/store/apps/details?id=com.allscripts.SunriseMobileX">Allscripts Healthcare Solutions</a></div>
+                <div> <a href ="https://play.google.com/store/apps/details?id=com.athenahealth.athenawell">Athenahealth Inc</a></div>
+               
+                <div><h5> Team Advisors:</h5></div>
                 
-                <div id="m1">
-                    <div style="padding:5px">
-                        Shanghai <br>
-                    </div>
-                    <a class="button" href="tel://+1-617-299-1193" style="padding:5px"> <font size="3" color="black">+1-857-228-4288</font></a>
-                    <button name="buttonClick" onclick="callAssistance()" text-align="center" id="menu">
-                        SEND SMS</button>
-                </div>
+                <div> <a href ="https://www.linkedin.com/in/tfarhat">Tammam Farhat MD, MBA</a></div>
+                <div> <a href ="https://www.linkedin.com/in/pei-shan-zhao-460b7912/">Pei-Shan Zhao MD, PhD</a></div>
                
             </div> <!-- main -->
            </div> <!-- page -->
